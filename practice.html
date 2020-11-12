@@ -28,6 +28,11 @@
             text-decoration: none;
         }
 
+        ul {
+            list-style:none;
+            padding-left:0px;
+        }
+
         .welcome {
             line-height: 35px;
             margin-left: 20px;
@@ -76,6 +81,26 @@
             color: gray;
             border-radius: 20px;
         }
+        .product-img {
+            flex-shrink: 0;
+            width: 100%;
+            border-radius: calc(.25rem - 1px); 
+        }
+
+        .product-body {
+            -ms-flex : 1 1 auto;
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding:1.25rem;
+        }
+
+        .product .number {
+            position: absolute;
+            padding: 5px 12px;
+            background-color: black;
+            color: white;
+            border-radius: calc(.25rem - 1px);            
+        }
 
         .product .company {
             font-size: 0.9rem;
@@ -89,15 +114,7 @@
 
         .product .price {
             font-size: 0.9rem;
-        }
-
-        .product:hover .card-img-top {
-            -webkit-transform: scale(1.15);
-            -moz-transform: scale(1.15);
-            -ms-transform: scale(1.15);
-            -o-transform: scale(1.15);
-            transform: scale(1.15);
-        }
+        }        
 
         .viewMoreBtn {
             font-size: 0.8rem;
@@ -118,6 +135,10 @@
 
         #footer-global {
             font-size: 0.8rem;
+        }
+
+        #footer-global .fg-line li{
+            padding: 5px;
         }        
 
         #footer-global .fg-sns {
@@ -127,6 +148,20 @@
 
         #fg-lang {
             font-size: 0.8rem;
+        }
+
+        .fg-sitemap-title {
+            font-weight: bold;            
+        }
+
+        @media only screen and (min-width: 800px) {
+            .product:hover .product-img {
+                -webkit-transform: scale(1.15);
+                -moz-transform: scale(1.15);
+                -ms-transform: scale(1.15);
+                -o-transform: scale(1.15);
+                transform: scale(1.15);
+            }
         }
 
     </style>
@@ -279,8 +314,8 @@
                     <div class="col-md-3 col-sm-12">
                         <a href="#">
                             <div class="product" style="width:100%">
-                                <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                <div class="card-body">
+                                <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                <div class="product-body">
                                     <p class="company">Starbooks</p>
                                     <p class="name">starbooks americano tall</p>
                                     <p class="price">$ 4.68</p>
@@ -291,8 +326,8 @@
                     <div class="col-md-3 col-sm-12">
                         <a href="#">
                             <div class="product" style="width:100%">
-                                <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                <div class="card-body">
+                                <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                <div class="product-body">
                                     <p class="company">Starbooks</p>
                                     <p class="name">starbooks americano tall</p>
                                     <p class="price">$ 4.68</p>
@@ -303,8 +338,8 @@
                     <div class="col-md-3 col-sm-12">
                         <a href="#">
                             <div class="product" style="width:100%">
-                                <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                <div class="card-body">
+                                <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                <div class="product-body">
                                     <p class="company">Starbooks</p>
                                     <p class="name">starbooks americano tall</p>
                                     <p class="price">$ 4.68</p>
@@ -315,8 +350,8 @@
                     <div class="col-md-3 col-sm-12">
                         <a href="#">
                             <div class="product" style="width:100%">
-                                <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                <div class="card-body">
+                                <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                <div class="product-body">
                                     <p class="company">Starbooks</p>
                                     <p class="name">starbooks americano tall</p>
                                     <p class="price">$ 4.68</p>
@@ -327,8 +362,8 @@
                     <div class="col-md-3 col-sm-12">
                         <a href="#">
                             <div class="product" style="width:100%">
-                                <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                <div class="card-body">
+                                <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                <div class="product-body">
                                     <p class="company">Starbooks</p>
                                     <p class="name">starbooks americano tall</p>
                                     <p class="price">$ 4.68</p>
@@ -339,8 +374,8 @@
                     <div class="col-md-3 col-sm-12">
                         <a href="#">
                             <div class="product" style="width:100%">
-                                <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                <div class="card-body">
+                                <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                <div class="product-body">
                                     <p class="company">Starbooks</p>
                                     <p class="name">starbooks americano tall</p>
                                     <p class="price">$ 4.68</p>
@@ -351,8 +386,8 @@
                     <div class="col-md-3 col-sm-12">
                         <a href="#">
                             <div class="product" style="width:100%">
-                                <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                <div class="card-body">
+                                <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                <div class="product-body">
                                     <p class="company">Starbooks</p>
                                     <p class="name">starbooks americano tall</p>
                                     <p class="price">$ 4.68</p>
@@ -363,8 +398,8 @@
                     <div class="col-md-3 col-sm-12">
                         <a href="#">
                             <div class="product" style="width:100%">
-                                <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                <div class="card-body">
+                                <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                <div class="product-body">
                                     <p class="company">Starbooks</p>
                                     <p class="name">starbooks americano tall</p>
                                     <p class="price">$ 4.68</p>
@@ -375,8 +410,8 @@
                     <div class="col-md-3 col-sm-12">
                         <a href="#">
                             <div class="product" style="width:100%">
-                                <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                <div class="card-body">
+                                <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                <div class="product-body">
                                     <p class="company">Starbooks</p>
                                     <p class="name">starbooks americano tall</p>
                                     <p class="price">$ 4.68</p>
@@ -387,8 +422,8 @@
                     <div class="col-md-3 col-sm-12">
                         <a href="#">
                             <div class="product" style="width:100%">
-                                <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                <div class="card-body">
+                                <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                <div class="product-body">
                                     <p class="company">Starbooks</p>
                                     <p class="name">starbooks americano tall</p>
                                     <p class="price">$ 4.68</p>
@@ -399,8 +434,8 @@
                     <div class="col-md-3 col-sm-12">
                         <a href="#">
                             <div class="product" style="width:100%">
-                                <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                <div class="card-body">
+                                <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                <div class="product-body">
                                     <p class="company">Starbooks</p>
                                     <p class="name">starbooks americano tall</p>
                                     <p class="price">$ 4.68</p>
@@ -411,8 +446,8 @@
                     <div class="col-md-3 col-sm-12">
                         <a href="#">
                             <div class="product" style="width:100%">
-                                <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                <div class="card-body">
+                                <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                <div class="product-body">
                                     <p class="company">Starbooks</p>
                                     <p class="name">starbooks americano tall</p>
                                     <p class="price">$ 4.68</p>
@@ -444,8 +479,8 @@
                         <div class="col-md-3 col-sm-12">
                             <a href="#">
                                 <div class="product" style="width:100%">
-                                    <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                    <div class="card-body">
+                                    <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                    <div class="product-body">
                                         <p class="company">Starbooks</p>
                                         <p class="name">starbooks americano tall</p>
                                         <p class="price">$ 4.68</p>
@@ -456,8 +491,8 @@
                         <div class="col-md-3 col-sm-12">
                             <a href="#">
                                 <div class="product" style="width:100%">
-                                    <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                    <div class="card-body">
+                                    <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                    <div class="product-body">
                                         <p class="company">Starbooks</p>
                                         <p class="name">starbooks americano tall</p>
                                         <p class="price">$ 4.68</p>
@@ -468,8 +503,8 @@
                         <div class="col-md-3 col-sm-12">
                             <a href="#">
                                 <div class="product" style="width:100%">
-                                    <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                    <div class="card-body">
+                                    <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                    <div class="product-body">
                                         <p class="company">Starbooks</p>
                                         <p class="name">starbooks americano tall</p>
                                         <p class="price">$ 4.68</p>
@@ -480,8 +515,8 @@
                         <div class="col-md-3 col-sm-12">
                             <a href="#">
                                 <div class="product" style="width:100%">
-                                    <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                    <div class="card-body">
+                                    <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                    <div class="product-body">
                                         <p class="company">Starbooks</p>
                                         <p class="name">starbooks americano tall</p>
                                         <p class="price">$ 4.68</p>
@@ -499,8 +534,9 @@
                         <div class="col-md-3 col-sm-12">
                             <a href="#">
                                 <div class="product" style="width:100%">
-                                    <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                    <div class="card-body">
+                                    <span class="number">1</span>
+                                    <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                    <div class="product-body">
                                         <p class="company">Starbooks</p>
                                         <p class="name">starbooks americano tall</p>
                                         <p class="price">$ 4.68</p>
@@ -511,8 +547,9 @@
                         <div class="col-md-3 col-sm-12">
                             <a href="#">
                                 <div class="product" style="width:100%">
-                                    <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                    <div class="card-body">
+                                    <span class="number">2</span>
+                                    <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                    <div class="product-body">
                                         <p class="company">Starbooks</p>
                                         <p class="name">starbooks americano tall</p>
                                         <p class="price">$ 4.68</p>
@@ -523,8 +560,9 @@
                         <div class="col-md-3 col-sm-12">
                             <a href="#">
                                 <div class="product" style="width:100%">
-                                    <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                    <div class="card-body">
+                                    <span class="number">3</span>
+                                    <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                    <div class="product-body">
                                         <p class="company">Starbooks</p>
                                         <p class="name">starbooks americano tall</p>
                                         <p class="price">$ 4.68</p>
@@ -535,8 +573,9 @@
                         <div class="col-md-3 col-sm-12">
                             <a href="#">
                                 <div class="product" style="width:100%">
-                                    <img class="card-img-top" src="./image/coffee.jpg" alt="coffee">
-                                    <div class="card-body">
+                                    <span class="number">4</span>
+                                    <img class="product-img" src="./image/coffee.jpg" alt="coffee">
+                                    <div class="product-body">
                                         <p class="company">Starbooks</p>
                                         <p class="name">starbooks americano tall</p>
                                         <p class="price">$ 4.68</p>
@@ -550,11 +589,62 @@
             </div>
         </div> <!-- content-wrapper End -->
         <div id="footer" class="bg-white">
-
+            <div class="container pb-3">
+                <div class="row pt-5">
+                    <div class="col-lg-5 ml-2">
+                        <ul>
+                            <li class="fg-sitemap-title">
+                                LOGO
+                            </li>
+                            <li>
+                                <p>compnay</p>
+                                <p>address</p>
+                                <p>phone number</p>
+                            </li>
+                        </ul>    
+                    </div>
+                    <div class="col-lg-2 ml-3">
+                        <ul>
+                            <li class="fg-sitemap-title">
+                                About company
+                            </li>
+                            <li><a href="#">map1</a></li>
+                            <li><a href="#">map2</a></li>
+                            <li><a href="#">map3</a></li>
+                            <li><a href="#">map4</a></li>
+                            <li><a href="#">map5</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 ml-3">
+                        <ul>
+                            <li class="fg-sitemap-title">
+                                Service
+                            </li>
+                            <li><a href="#">map1</a></li>
+                            <li><a href="#">map2</a></li>
+                            <li><a href="#">map3</a></li>
+                            <li><a href="#">map4</a></li>
+                            <li><a href="#">map5</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 ml-3">
+                        <ul>
+                            <li class="fg-sitemap-title">
+                                Center
+                            </li>
+                            <li><a href="#">map1</a></li>
+                            <li><a href="#">map2</a></li>
+                            <li><a href="#">map3</a></li>
+                            <li><a href="#">map4</a></li>
+                            <li><a href="#">map5</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div> <!-- footer End -->
         <div id="footer-global">
             <div class="container">
-                <ul class="list-inline mb-0 p-3">
+                <ul class="list-inline mb-0 p-3 fg-line">
                     <li class="list-inline-item col-md-7"><span>Copyright @ company inc. All right Reserved</span></li>
                     <li class="list-inline-item col-md-2">
                         <select class="form-control" id="fg-lang">
