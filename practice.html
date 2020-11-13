@@ -800,14 +800,22 @@
             </div>
         </div> <!-- footer-global End -->
 <script> 
-    $(document).ready(function(){      
-      $('.bxslider').bxSlider({
+    $(document).ready(function(){   
+
+    $('.carousel').carousel({
+        interval: 2000,
+        cycle: true,
+        pause: null
+    })    
+
+    $('.bxslider').bxSlider({
         auto: true,
         controls: false,        
         autoControls: true,
         stopAutoOnClick: true,       
         responsive: true 
-      });
+      });      
+
     });
 </script>        
 </body>
