@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridLayout</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: minmax(100px auto);
+            /* column-gap: 30px; */
+            /* row-gap: 20px; */
+            grid-gap: 10px;
+            margin-bottom: 20px;
+        }
+        .items {
+            padding: 10px;
+            background-color: #eee;
+        }
+        .items:nth-child(odd){
+            background-color: #bbb;
+        }
+
+        .box {
+            padding: 15px;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .box1 {
+            background-color:skyblue;            
+            grid-column: 1/4;            
+        }
+        .box2 {
+            background-color: tomato;
+            grid-row: 2/4;
+        }
+        .box3 {
+            background-color: teal;
+            grid-column: 2/4;
+            grid-row: 2/3;
+        }
+        .box4 {
+            background-color: blueviolet;
+            grid-column-start: 3;
+            grid-row-start: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="items">Lorem, ipsum dolor</div>
+        <div class="items">Lorem, ipsum dolor sit amet consectetur </div>
+        <div class="items">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="items">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, non fugit, rerum dicta fuga numquam facere et nostrum ducimus iusto itaque odit sapiente tempora perspiciatis hic doloribus vel reprehenderit laboriosam.</div>
+    </div>
+
+    <div class="wrapper">
+        <div class="box box1">Lorem, ipsum dolor</div>
+        <div class="box box2">Lorem, ipsum dolor sit amet consectetur </div>
+        <div class="box box3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="box box4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, non fugit, rerum dicta fuga numquam facere et nostrum ducimus iusto itaque odit sapiente tempora perspiciatis hic doloribus vel reprehenderit laboriosam.</div>
+    </div>
+</body>
+</html>
