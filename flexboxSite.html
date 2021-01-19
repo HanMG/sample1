@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlexBoxSite</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/flexboxSite.css">        
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
 </head>
+
 <body>
     <!-- navigation -->
     <nav>
         <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
+            <li><a href="#">item1</a></li>
+            <li><a href="#">item2</a></li>
+            <li><a href="#">item3</a></li>
+            <li><a href="#">item4</a></li>
         </ul>
         <a href="#" id="trigger">Menu</a>
     </nav>
-   
-    <!-- carousel -->
-    <section>
-        <div class="wrapper">            
 
+    <!-- carousel -->
+    <section class="banner">
+        <div class="wrapper">
+            <div class="bxSlider">
+                <div>
+                    <img src="./image/3.jpg" alt="Image1" title="해변&등대">
+                </div>
+                <div>
+                    <img src="./image/2.jpg" alt="Image2" title="해변">
+                </div>                
+            </div>
         </div>
     </section>
 
@@ -28,27 +40,31 @@
     <section>
         <div class="wrapper">
             <header class="section-title">
-                <h3>Section Title</h3>
+                <h2>Section Title</h2>
             </header>
             <div class="intro">
                 <div class="text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit debitis, sit consequuntur tempora voluptatum rerum unde molestias optio tempore laborum! Voluptate unde placeat quisquam adipisci asperiores dolore ducimus, aspernatur laboriosam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit debitis, sit consequuntur tempora
+                        voluptatum rerum unde molestias optio tempore laborum! Voluptate unde placeat quisquam adipisci
+                        asperiores dolore ducimus, aspernatur laboriosam.</p>
                 </div>
                 <div class="img">
-                    <img src="" alt="image" width="250">
+                    <img src="./image/coffee.jpg" alt="image" width="250">
                 </div>
             </div>
         </div>
     </section>
 
-     <!-- no use flex -->
+    <!-- no use flex -->
     <section>
         <div class="wrapper">
             <div class="about">
                 <div class="message">
-                    <img src="" alt="">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, eligendi distinctio! Illum laudantium recusandae commodi aliquam expedita asperiores doloribus aliquid totam fuga esse suscipit veniam impedit iure, adipisci necessitatibus voluptatem.</p>
-                    <img src="" alt="">
+                    <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, eligendi distinctio! Illum
+                        laudantium recusandae commodi aliquam expedita asperiores doloribus aliquid totam fuga esse
+                        suscipit veniam impedit iure, adipisci necessitatibus voluptatem.</p>
+                    <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
                 </div>
             </div>
         </div>
@@ -58,48 +74,68 @@
     <section>
         <div class="wrapper">
             <header class="section-title">
-                <h3>Section Title</h3>
+                <h2>Section Title</h2>
             </header>
-            <div class="program-list">
+            <div class="item-list">
                 <div class="items">
                     <h4>Item Title</h4>
-                    <p>Item Text</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis ea libero quisquam, fugit iure quis culpa ipsa, illum iste voluptatum ducimus ipsam qui exercitationem facilis? Animi expedita vel aspernatur repudiandae.</p>
                 </div>
                 <div class="items">
                     <h4>Item Title</h4>
-                    <p>Item Text</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis ea libero quisquam, fugit iure quis culpa ipsa, illum iste voluptatum ducimus ipsam qui exercitationem facilis? Animi expedita vel aspernatur repudiandae.</p>
                 </div>
                 <div class="items">
                     <h4>Item Title</h4>
-                    <p>Item Text</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis ea libero quisquam, fugit iure quis culpa ipsa, illum iste voluptatum ducimus ipsam qui exercitationem facilis? Animi expedita vel aspernatur repudiandae.</p>
                 </div>
                 <div class="items">
                     <h4>Item Title</h4>
-                    <p>Item Text</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis ea libero quisquam, fugit iure quis culpa ipsa, illum iste voluptatum ducimus ipsam qui exercitationem facilis? Animi expedita vel aspernatur repudiandae.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- footer -->
-    <footer>
+    <section class="footer">
         <div class="wrapper">
             <div class="footer-info">
                 <div class="contact">
-                    <p>Company : wwqqee</p>
-                    <p>Address : 12323123</p>
-                    <p>Phone : 123123</p>
-                    <p>Email : qweqwe</p>
+                    <p>Company : SomeCompany</p>
+                    <p>Address : SomeWhere.Seoul.SouthKorea</p>
+                    <p>Phone : 12345-67890</p>
+                    <p>Email : SomeCompany@SomeEmail</p>
                 </div>
-            </div>
-
-            <div class="sns">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </div>
+                <div class="sns">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-tumblr"></ion-icon></a>
+                </div>
+            </div>            
         </div>
-    </footer>
+    </section>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <script>
+        $(function () {
+            var trigger = $('#trigger');
+            var menu = $('nav ul');
+            $(trigger).on('click', function (e) {
+                e.preventDefault();
+                menu.slideToggle();
+            })
+
+            $('.bxSlider').bxSlider({
+                auto: true,
+                autoHover: true,                
+                infiniteLoop: true
+            })
+        })
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:link,
+a:hover,
+a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #41586d;
+}
+
+nav {
+    width: 100vw;
+    height: auto;
+    background-color: #34495e;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul {
+    display: none;
+    height: auto;
+}
+
+nav ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #576979;
+}
+
+nav ul li a {
+    line-height: 80px;
+}
+
+nav a#trigger {
+    display: block;
+
+    background-color: #283744;
+    width: 100%;
+    padding-left: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+section {
+    width: 100vw;
+    position:relative;
+}
+
+section:nth-child(odd){
+    background-color: #f3f3f4;
+}
+
+.section-title {
+    text-align: center;    
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.section-title h3 {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: transparent;
+}
+
+.banner {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.about {
+    line-height: 1.8;
+    padding: 20px 50px;
+}
+.message {
+    text-align: center;
+}
+
+.message p {
+    color: #ff6600;
+    font-size: 1.4em;
+    font-style: italic;    
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.message ion-icon {
+    font-size: 1.8em;    
+    color: #aaa;
+    margin: 50px 0 50px 0;
+}
+
+.intro {
+    padding: 20px 50px;
+}
+
+
+.text {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.text h3 {
+    font-size: 1.6em;
+    margin-bottom: 50px;
+}
+
+.text p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.img {            
+    text-align: center;
+    display: none;
+}
+
+img {
+    object-fit: cover;
+}
+
+.item-list {
+    padding: 20xp 50px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.item-list h4 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.items {
+    padding: 30px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #aaa;         
+}
+
+.footer {     
+    background-color: #34495e;
+}
+
+
+.footer-info {
+    display: flex;
+    color: white;    
+    flex-direction: column;        
+    align-items: center;
+}
+
+.footer-info div {
+    flex: 1;   
+    padding: 30px;
+}
+
+.footer-info .sns a {
+    padding: 20px;
+}
+
+.footer-info .sns ion-icon {
+    font-size: 1.8em;
+}
+
+
+@media screen and (min-width: 764px) {
+    nav {
+        height: 80px;
+        border-bottom: 2px solid #34495e;
+    }
+
+    nav ul {
+        list-style: none;
+        display: block;
+        width: 750px;
+        height: 80px;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        flex: 1;
+        flex-basis: 22%;
+        border-bottom: 0;
+        border-right: 1px solid #576979;
+        margin-right: -6px;
+    }
+
+    nav ul li:last-child {
+        border-right: 0;
+    }
+    
+    nav ul li a {
+        font-size: 1em;
+        line-height: 80px;
+    }
+
+    nav a#trigger {
+        display: none;
+    }    
+
+    .intro {
+        display: flex;
+        align-items: center;
+    }
+
+    .text {
+        flex: 2;
+    }
+
+    .img {
+        display: block;
+        flex: 1;
+    }
+
+    .img>img {
+        max-width: 250px;
+    }  
+
+    .item-list {       
+        flex-direction: row;
+    }
+
+    .items {       
+        flex-basis: 22%;        
+    }
+
+    .footer-info {        
+        flex-direction: row;    
+       
+    }
+
+    .footer-info .contact {
+        padding-left: 50px;
+    }
+
+    .footer-info .sns ion-icon {
+        font-size: 2.2em;
+    }
+}
